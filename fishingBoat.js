@@ -5,7 +5,8 @@ const boatInventory = () => {
     // Don't need to pass fishArray as an argument to this function, can access directly after importing
     const fishObjects = []
 
-    for (fish of fishArray) {
+    for (const fish of fishArray) {
+        // was missing 'const' before fish
         const fishObject = {
             id: fish.id,
             species: fish.species,
