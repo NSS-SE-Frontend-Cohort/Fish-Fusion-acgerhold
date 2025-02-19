@@ -7,6 +7,7 @@ const boatInventory = () => {
 
     for (fish of fishArray) {
         const fishObject = {
+            id: fish.id,
             species: fish.species,
             weight: fish.weight,
             price: fish.price,
